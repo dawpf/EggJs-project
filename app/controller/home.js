@@ -13,7 +13,7 @@ class HomeController extends Controller {
   async index() {
     const { ctx, app } = this;
     // ctx.body = 'hi, egg';
-    ctx.body = app.getData('1111111111111111')
+    ctx.response.body = this
   }
 
   async fetch() {
